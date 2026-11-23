@@ -1,0 +1,23 @@
+SO DO NOI DAY - PS2 + LEONARDO + UNO R3 + L298N
+
+L298N -> Uno R3:
+ENA -> D5
+IN1 -> D2
+IN2 -> D3
+IN3 -> D8
+IN4 -> D9
+ENB -> D10
+
+PS2 receiver -> Leonardo:
+DAT -> D7
+CMD -> D5
+SEL/ATT -> D6
+CLK -> D4
+VCC/GND -> cap dung dien ap theo bo thu va GND Leonardo
+
+Leonardo TX1/D1 -> Uno RX/D0
+GND Leonardo -> GND Uno va GND L298N
+
+Thao jumper ENA va ENB tren L298N khi noi vao D5/D10 de dieu khien PWM.
+Dieu khien: giu L1; can trai len/xuong tien/lui, can trai trai/phai re;
+tha L1 hoac nhan SELECT de dung motor.
